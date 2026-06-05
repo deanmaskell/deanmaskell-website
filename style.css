@@ -90,6 +90,10 @@ p:last-child { margin-bottom: 0; }
 
 .section-white { background: var(--white);    padding: var(--section-v) 32px; }
 .section-pale  { background: var(--pale-blue); padding: var(--section-v) 32px; }
+.section-navy  { background: var(--navy);      padding: var(--section-v) 32px; }
+.section-navy h2 { color: var(--white); }
+.section-navy p  { color: rgba(255, 255, 255, 0.88); max-width: 760px; font-size: 1.025rem; margin-bottom: 1.4rem; }
+.section-navy p:last-child { margin-bottom: 0; }
 
 /* ===========================
    CTA Button
@@ -327,9 +331,86 @@ p:last-child { margin-bottom: 0; }
     color: var(--navy) !important;
 }
 
+.problem-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.4rem;
+    max-width: 760px;
+}
+.problem-list li {
+    border-left: 4px solid var(--navy);
+    padding: 12px 0 12px 16px;
+    margin-bottom: 12px;
+    font-size: 1.025rem;
+}
+.problem-list li:last-child { margin-bottom: 0; }
+
+.prose-question {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin: 2rem 0 1rem;
+    max-width: 760px;
+}
+
+.solution-list {
+    list-style: decimal;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 37, 49, 0.12);
+    padding-top: 2rem;
+    max-width: 760px;
+}
+.solution-list li {
+    margin-bottom: 1rem;
+    font-size: 1.025rem;
+}
+
+.prose-callout {
+    background: rgba(0, 37, 49, 0.06);
+    padding: 16px;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--navy);
+    max-width: 760px;
+    margin-top: 2rem;
+    margin-bottom: 0 !important;
+}
+
 /* ===========================
    Section 3 — What Changes
 =========================== */
+.outcome-heading {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 2.5rem 0 0.75rem;
+    max-width: 760px;
+}
+
+.outcome-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 760px;
+}
+.outcome-list li {
+    border-left: 3px solid var(--navy);
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    margin-bottom: 0.65rem;
+    font-size: 1.025rem;
+}
+.outcome-list li:last-child { margin-bottom: 0; }
+
+.outcome-divider {
+    border: none;
+    border-top: 1px solid rgba(0, 37, 49, 0.15);
+    margin: 3rem 0;
+    max-width: 760px;
+}
+
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -371,12 +452,42 @@ p:last-child { margin-bottom: 0; }
     border-radius: var(--border-radius);
 }
 
+/* Proof section */
+.section-navy .eyebrow-section { color: var(--orange); }
+
+.proof-company {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--white);
+    margin: 0 0 0.5rem;
+}
+
+.proof-case {
+    border-left: 3px solid var(--orange);
+    padding-left: 16px;
+    margin-bottom: 24px;
+    max-width: 760px;
+}
+
+.proof-others {
+    margin-top: 32px;
+    max-width: 760px;
+}
+
+.proof-divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 3rem 0;
+}
+
 /* Testimonials */
 .testimonials-section { margin: 3rem 0 2.5rem; }
 
 .testimonials-section > h3 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    color: var(--white);
 }
 
 .testimonials-grid {
@@ -386,7 +497,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .testimonial {
-    background: var(--pale-blue);
+    background: var(--white);
     padding: 1.75rem;
     border-radius: var(--border-radius);
 }
@@ -403,8 +514,16 @@ p:last-child { margin-bottom: 0; }
     font-style: normal;
     font-weight: 600;
     font-size: 0.875rem;
-    color: var(--navy);
-    opacity: 0.7;
+    color: var(--orange);
+}
+
+.testimonial cite a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.testimonial cite a:hover {
+    text-decoration: underline;
 }
 
 /* Short Version */
@@ -656,6 +775,7 @@ footer .container {
     .container,
     .section-white,
     .section-pale,
+    .section-navy,
     .section-bg-2,
     .hero,
     footer {
