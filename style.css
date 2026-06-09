@@ -648,6 +648,10 @@ p:last-child { margin-bottom: 0; }
 /* ===========================
    Section 7 — Get in Touch
 =========================== */
+#contact .btn-cta {
+    margin-top: 0.75rem;
+}
+
 #contact h3 {
     font-size: 1.5rem;
     margin-top: 2rem;
