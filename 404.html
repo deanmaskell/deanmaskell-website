@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Dean Maskell</title>
+    <meta name="description" content="The page you were looking for could not be found.">
+    <meta name="robots" content="noindex">
+
+    <!-- Favicons -->
+    <link rel="icon" href="Dean Maskell favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="Dean Maskell favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Dean Maskell favicon-16x16.png">
+    <link rel="apple-touch-icon" href="Dean Maskell favicon apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .error-section {
+            min-height: calc(100vh - 80px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 24px;
+        }
+        .error-inner {
+            max-width: 540px;
+        }
+        .error-code {
+            font-family: 'Atkinson Hyperlegible', sans-serif;
+            font-size: clamp(80px, 15vw, 140px);
+            font-weight: 700;
+            line-height: 1;
+            margin: 0 0 16px;
+            color: var(--navy, #0f1f3d);
+        }
+        .error-heading {
+            font-size: clamp(1.4rem, 3vw, 1.9rem);
+            margin: 0 0 16px;
+        }
+        .error-body {
+            font-size: 1.05rem;
+            color: #4a5568;
+            margin: 0 0 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="/" class="nav-logo" aria-label="Dean Maskell — home">
+                <img src="Dean Maskell Logo Transparent.png" alt="Dean Maskell">
+            </a>
+            <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links" role="list">
+                <li><a href="/#familiar">Sounds Familiar</a></li>
+                <li><a href="/#changes">What Changes</a></li>
+                <li><a href="/#who">Who I Am</a></li>
+                <li><a href="/#testimonials">Proof</a></li>
+                <li><a href="/#started">Get Started</a></li>
+                <li class="nav-cta-item"><a href="https://meetings-eu1.hubspot.com/dean-maskell" target="_blank" rel="noopener noreferrer" class="btn-nav-cta">Book a call</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- ===== 404 CONTENT ===== -->
+    <section class="error-section section-white">
+        <div class="error-inner">
+            <p class="error-code">404</p>
+            <h1 class="error-heading">Page not found</h1>
+            <p class="error-body">The page you were looking for does not exist. It may have been moved, or the link may be wrong.</p>
+            <a href="/" class="btn-cta">Back to homepage</a>
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+
+            <div class="footer-links">
+                <a href="mailto:dean@deanmaskell.com">dean@deanmaskell.com</a>
+                <a href="https://linkedin.com/in/deanmaskell" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://deanmaskell.com">deanmaskell.com</a>
+            </div>
+
+            <div class="footer-legal">
+                <p>DeanMaskell.com &nbsp;|&nbsp; AdSuccess Group Limited &nbsp;|&nbsp; Company No. 14880397 &nbsp;|&nbsp; VAT No. GB443891765 &nbsp;|&nbsp; Copyright 2026. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
