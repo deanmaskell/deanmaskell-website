@@ -1,5 +1,15 @@
 {
-	"assets": {
-		"not_found_handling": "404-page"
-	}
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "deanmaskell-website",
+  "compatibility_date": "2026-06-12",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
 }
